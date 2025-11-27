@@ -1,46 +1,167 @@
 <!DOCTYPE html>
 <html>
-   <head>
-        <title>Paola Reyes - Project</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="media/flower.png">
-        <link href="style.css" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/b263e51847.js" crossorigin="anonymous"></script>
-   </head>
-  <body>
-    <header>
-      <a href="index.html" class="title">PAOLA REYES</a>
 
-      <nav class="horizontal-bar inline-items">
-        <a href="index.html">ABOUT</a>
-        <a href="portfolio.html">PORTFOLIO</a>
-      </nav>
+<head>
+  <title>Paola Reyes - Project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="media/flower.png">
+  <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <script src="https://kit.fontawesome.com/b263e51847.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</head>
 
-      <!-- For smaller screens -->
-      <span class="menu-symbol material-symbols-outlined">menu</span>
-      <nav class="side-bar">
-        <a href="#about">ABOUT</a>
-        <a href="portfolio.html">PORTFOLIO</a>
-      </nav>
-    </header>
+<body>
+  <header>
+    <a href="index.html" class="title">Paola Reyes</a>
 
-    <section class="portfolio">    
+    <nav class="horizontal-bar inline-items">
+      <a href="index.html">ABOUT</a>
+      <a href="portfolio.html">PORTFOLIO</a>
+    </nav>
 
-    </section> 
+    <!-- For smaller screens -->
+    <div class="menu-symbol material-symbols-outlined">menu</div>
+    <nav class="side-bar">
+      <a href="#about">ABOUT</a>
+      <a href="portfolio.html">PORTFOLIO</a>
+    </nav>
+  </header>
 
-    <footer class="inline-items">
-      <span class="social-media inline-items">
-        <a href="https://github.com/paola-reyes" target="_blank">
-          <i class="fa-brands fa-github hover-hidden"></i>
-          <i class="fa-brands fa-github fa-flip hover-show"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/paola-reyes9/" target="_blank">
-          <i class="fa-brands fa-linkedin hover-hidden"></i>
-          <i class="fa-brands fa-linkedin fa-flip hover-show"></i>
-        </a>
+  <section class="project-overview main">
+    <div class="main-text">
+      <h1>BookClub</h1>
+      <h3 class="subheading">A platform for book enthusiasts to explore and read the classics.</h3>
+
+      <h2>Overview</h2>
+      <p>BookClub is a web application designed for book lovers to discover and read classic literature.
+        The platform offers a curated selection of timeless books along with features that enhance
+        our user's e-reading experience.</p>
+    </div>
+
+    <div class="thumbnail hover-shift">
+      <img src="media/bookclub-thumbnail.png" alt="BookClub project preview">
+    </div>
+  </section>
+
+  <section class="project-details">
+    <h1>Functionality</h1>
+
+    <h2>Choose among hundreds of public domain ebooks to read online.</h2>
+    <p>The main Functionality of this app allows you to choose a book from the collection and read it in
+      our online reader. This app uses Project Gutenberg's
+      <span class="text-highlight">
+        <a href="https://gutendex.com/" target="_blank">Gutendex API</a>
       </span>
+      to fetch from its extensive library of free ebooks and organized book classification system. The
+      ebook is built using
+      <span class="text-highlight">
+        <a href="https://readium.org/" target="_blank">Readium API</a>
+      </span>
+      to make the app EPUB-compliant.
+    </p>
 
-      <p>Copyright &copy;<script type="text/javascript">document.write(new Date().getFullYear());</script> Paola Reyes. All rights reserved.</p>
-    </footer>
-  </body>
+    <h2>Read ebooks using our personalized e-reader.</h2>
+    <p>The e-reader includes personalization features such as
+      <span class="text-highlight">single-page or double-page view</span>,
+      adjustable <span class="text-highlight">font size</span> and
+      <span class="text-highlight">font-family</span>, and
+      background color options such as
+      <span class="text-highlight">light mode</span>,
+      <span class="text-highlight">dark mode</span>, and
+      <span class="text-highlight">caf&eacute; mode</span>.
+      It also tracks your progress with a reading <span class="text-highlight">progress bar</span>
+      and saves your current page and preferences for future reading sessions.
+    </p>
+
+    <h2>Browse a curated library of classic literature.</h2>
+    <p>You can browse through the collection by genres like
+      <span class="text-highlight">Popular Fiction</span>,
+      <span class="text-highlight">Adventure</span>,
+      <span class="text-highlight">Fantasy</span>,
+      <span class="text-highlight">Drama</span>, and
+      <span class="text-highlight">Romance</span>.
+      It also includes a <span class="text-highlight">search option</span> that allows you to search for specific titles
+      or authors.
+    </p>
+
+    <h2>Maintain a personal library of your favorite books.</h2>
+    <p>You can create an account to save your favorite books to your <span class="text-highlight">personal
+        library</span>. This allows you to
+      easily access and manage your collection of preferred reads.
+    </p>
+
+    <h1>Technologies</h1>
+
+    <div class="tech-stack">
+      <table>
+        <tr>
+          <th>Frontend</th>
+          <th>Backend</th>
+          <th>Tools</th>
+        </tr>
+        <td>HTML</td>
+        <td>Python</td>
+        <td>Flask</td>
+        <tr>
+          <td>CSS</td>
+          <td>SQLite</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>JavaScript</td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="carousel" data-flickity='{"cellAlign": "center", "wrapAround": true}'>
+      <div class="carousel-cell">
+        <img src="media/bookclub-landing.png" alt="BookClub project preview">
+      </div>
+      <div class="carousel-cell">
+        <img src="media/bookclub-discover.png" alt="BookClub project preview">
+      </div>
+      <div class="carousel-cell">
+        <img src="media/bookclub-book-list.png" alt="BookClub project preview">
+      </div>
+      <div class="carousel-cell">
+        <img src="media/bookclub-book-light.png" alt="BookClub project preview">
+      </div>
+      <div class="carousel-cell">
+        <img src="media/bookclub-book-dark.png" alt="BookClub project preview">
+      </div>
+      <div class="carousel-cell">
+        <img src="media/bookclub-profile.png" alt="BookClub project preview">
+      </div>
+    </div>
+
+    <div class="btn-container">
+      <button class="next-btn btn-dark" onclick="window.location.href='#'">VIEW OUR APP<i
+          class="fa-solid fa-angle-right"></i></button>
+    </div>
+  </section>
+
+  <footer>
+    <div class="social-media inline-items">
+      <a href="https://github.com/paola-reyes" target="_blank">
+        <i class="fa-brands fa-github hover-hidden"></i>
+        <i class="fa-brands fa-github fa-flip hover-show"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/paola-reyes9/" target="_blank">
+        <i class="fa-brands fa-linkedin hover-hidden"></i>
+        <i class="fa-brands fa-linkedin fa-flip hover-show"></i>
+      </a>
+    </div>
+
+    <p>Copyright &copy;
+      <script type="text/javascript">document.write(new Date().getFullYear());</script> Paola Reyes. All rights
+      reserved.
+    </p>
+  </footer>
+</body>
+
 </html>

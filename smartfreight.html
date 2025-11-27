@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Paola Reyes - Project</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="media/flower.png">
-    <link href="style.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/b263e51847.js" crossorigin="anonymous"></script>
-  </head>
+   <head>
+      <title>Paola Reyes - Project</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" href="media/flower.png">
+      <link href="style.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+      <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+      <script src="https://kit.fontawesome.com/b263e51847.js" crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    </head>
   <body>
     <header>
-      <a href="index.html" class="title">PAOLA REYES</a>
+      <a href="index.html" class="title">Paola Reyes</a>
 
       <nav class="horizontal-bar inline-items">
         <a href="index.html">ABOUT</a>
@@ -17,19 +20,90 @@
       </nav>
 
       <!-- For smaller screens -->
-      <span class="menu-symbol material-symbols-outlined">menu</span>
+      <div class="menu-symbol material-symbols-outlined">menu</div>
       <nav class="side-bar">
         <a href="#about">ABOUT</a>
         <a href="portfolio.html">PORTFOLIO</a>
       </nav>
     </header>
 
-    <section class="portfolio">    
+    <section class="project-overview main">
+			<div class="main-text">
+				<h1>SmartFreight Solutions</h1>
+				<h3 class="subheading">Improving cargo monitoring for secure freight shipment delivery.</h3>
 
-    </section> 
+				<h2>Overview</h2>
+				<p> SmartFreight Solutions provides live updates on freight shipment container conditions
+          and road conditions en route to its destination.
+        </p>
+			</div>
 
-    <footer class="inline-items">
-      <span class="social-media inline-items">
+      <div class="thumbnail hover-shift">
+        <img src="media/smartfreight-map1.png" alt="BookClub project preview">
+      </div>
+		</section>
+
+    <section class="project-details">
+      <div class="details-text">
+        <h1>Functionality</h1>
+
+        <h2>Meeting the unique requirements of different types of shipments.</h2>
+        <p>This application is a smart way to <span class="text-highlight">monitor and generate reports</span> on freight container conditions. It is designed
+          for drivers and container owners to see <span class="text-highlight">live updates</span> of their shipment. It
+          takes into account the varied <span class="text-highlight">physical threshold</span> requirements of different types of products. 
+        </p>
+        <h2>Reporting sensor readings on current freight container conditions.</h2>
+        <p>Our application is designed to work alongside a sensor that is placed inside the freight container.
+          This will record <span class="text-highlight">temperature</span> and <span class="text-highlight">g-force</span> conditions while
+          reporting on any <span class="text-highlight">potentially damaging conditions</span> for the packages. The <span class="text-highlight">incident report</span> 
+          will show events like temperature spikes and excessive freight carrier vibrations recorded throughout the trip. 
+        </p>
+
+        <h2>Providing optimized route suggestions for freight carrier safety.</h2>
+        <p>The <span class="text-highlight">route optimization</span> feature takes into account recent <span class="text-highlight">weather conditions</span> and 
+          <span class="text-highlight">traffic indicents</span> to provide the safest route towards the destination. The 
+          <span class="text-highlight">shipment map</span> will display the current best route alongside the carrier's location.
+        </p>
+        
+        <h1>Technologies</h1>
+
+        <div class="tech-stack">
+          <table>
+            <tr>
+              <th>Frontend</th>
+              <th>Backend</th>
+              <th>Tools</th>
+            </tr>
+              <td>JavaScript</td>
+              <td>JavaScript</td>
+              <td>React Native</td>
+            <tr>
+              <td>CSS</td>
+              <td>SQL</td>
+              <td>Node.js</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="carousel" data-flickity='{"cellAlign": "center", "wrapAround": true}'>
+        <div class="carousel-cell">
+          <img src="media/smartfreight-landing.png" alt="BookClub project preview">
+        </div>
+        <div class="carousel-cell">
+          <img src="media/smartfreight-map1.png" alt="BookClub project preview">
+        </div>
+        <div class="carousel-cell">
+          <img src="media/smartfreight-map2.png" alt="BookClub project preview">
+        </div>
+        <div class="carousel-cell">
+          <img src="media/smartfreight-info.png" alt="BookClub project preview">
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="social-media inline-items">
         <a href="https://github.com/paola-reyes" target="_blank">
           <i class="fa-brands fa-github hover-hidden"></i>
           <i class="fa-brands fa-github fa-flip hover-show"></i>
@@ -38,7 +112,7 @@
           <i class="fa-brands fa-linkedin hover-hidden"></i>
           <i class="fa-brands fa-linkedin fa-flip hover-show"></i>
         </a>
-      </span>
+      </div>
 
       <p>Copyright &copy;<script type="text/javascript">document.write(new Date().getFullYear());</script> Paola Reyes. All rights reserved.</p>
     </footer>
