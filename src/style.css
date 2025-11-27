@@ -144,21 +144,15 @@ header {
   padding-left: 15px;
   line-height: 1.5;
 }
-@media (max-width: 768px) {
+@media (max-width: 868px) {
   .main {
-    padding: 75px 75px 50px;
-    gap: 50px;
+    padding: 75px;
     align-items: center;
   }
   .main-text {
     margin: 50px 0px 0px;
   }
   .main-img {
-    width: 300px;
-    border-radius: 10px;
-    overflow: hidden;
-  }
-  .main-img img {
     display: none;
   }
 }
@@ -190,10 +184,11 @@ header {
   .about {
     display: flex;
     flex-direction: column;
+    padding: 45px 30px 60px;
   }
   .about p {
     width: 90%;
-    font-size: 22px;
+    font-size: 20px;
   }
   .about img {
     width: 250px;
@@ -246,7 +241,7 @@ header {
   background-color: white;
   color: slategray;  
   padding: 25px; 
-  flex: 1;
+  flex: 1;  /* To keep card content the same height */
 }
 
 .skills .carousel {
@@ -372,6 +367,9 @@ footer {
     font-size: 18px;
   }
   @media (max-width: 768px) {
+    footer {
+      padding: 10px 20px;
+    }
     footer p {
       font-size: 14px;
     }
@@ -415,7 +413,7 @@ footer {
 }
 
 .thumbnail img {
-  width: 500px;
+  width: 1200px;
   height: 300px;
   border: 1.5px solid lightgray;
   border-radius: 5px;
@@ -526,6 +524,7 @@ footer {
 
 .project-overview .thumbnail {
   margin-right: 50px;
+  min-width: 420px;
 }
 
 .hover-shift img:hover { 
@@ -572,7 +571,6 @@ footer {
 .tech-stack {
   display: flex;
   justify-content: center;
-  margin: 50px 0px 100px 15px;
 }
 
 table {
@@ -644,3 +642,127 @@ table {
     width: 600px;
     height: auto;
   }
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  header {
+    background-color: yellow;
+  }
+  section {
+    padding: 40px;
+  }
+  header {
+    padding: 20px 40px;
+  }
+  .project-overview .main-text {
+    margin: 0px;
+  }
+  .main-text h1 {
+    font-size: 48px;
+  }
+  .portfolio .card {
+    width: 90%;
+    margin: 40px 0px;
+  }
+  .portfolio .card-content {
+    padding: 30px;
+  }
+  .project-overview {
+    flex-direction: column;
+    align-items: center;
+    padding: 75px;
+  }
+  .project-overview .thumbnail {
+    margin: 50px;
+  }
+}
+
+@media (max-width: 790px) {
+  header {
+    background-color: green;
+  }
+  section {
+    padding: 50px;
+  }
+  .title {
+    font-size: 32px;
+  }
+  .portfolio .card {
+    width: 100%;
+    margin: 30px 0px;
+  }
+  .portfolio .card-content {
+    padding: 30px;
+  }
+  .card-header {
+    padding: 15px;
+  }
+  .card-content {
+    padding: 15px;
+  }
+  .main {
+    padding: 50px;
+  }
+  .project-overview .thumbnail {
+    margin: 40px 0px 20px;
+  }
+  .project-details .carousel {
+    margin: 60px 0;
+  }
+  .project-details .carousel-cell img {
+    height: auto;
+    max-height: 360px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  /* TODO */
+  header {
+    padding: 16px 30px;
+    background-color: blue;
+  }
+  .horizontal-bar {
+    display: none !important;
+  }
+  .menu-symbol {
+    display: block !important;
+  }
+  .title {
+    font-size: 32px;
+  }
+  .main-text h1 {
+    font-size: 60px;
+  }
+  .project-summary {
+    margin: 20px 5px;
+  }
+  .project-details {
+    padding: 40px;
+  }
+  .project-details h2, .project-details p {
+    width: 100%;
+    margin-left: 0;
+  }
+  .tech-stack table {
+    width: 100%;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 420px) {
+  section {
+    padding: 20px;
+  }
+  .title {
+    font-size: 24px;
+  }
+  .main-text h1 {
+    font-size: 28px;
+  }
+}
