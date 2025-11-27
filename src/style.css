@@ -650,9 +650,6 @@ img {
 }
 
 @media (max-width: 1024px) {
-  header {
-    background-color: yellow;
-  }
   section {
     padding: 40px;
   }
@@ -683,9 +680,6 @@ img {
 }
 
 @media (max-width: 790px) {
-  header {
-    background-color: green;
-  }
   section {
     padding: 50px;
   }
@@ -722,10 +716,8 @@ img {
 }
 
 @media (max-width: 600px) {
-  /* TODO */
   header {
     padding: 16px 30px;
-    background-color: blue;
   }
   .horizontal-bar {
     display: none !important;
