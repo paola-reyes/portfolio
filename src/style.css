@@ -7,8 +7,8 @@
 
 :root {
   --header-bg: #262626;
-  --dark-bg: url(media/dark-bg.png);
-  --light-bg: url(media/light-bg.jpg);
+  --dark-bg: url(/media/dark-bg.png);
+  --light-bg: url(/media/light-bg.jpg);
 }
 
 body {
