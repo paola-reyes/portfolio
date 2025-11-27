@@ -12,7 +12,7 @@
 	</head>
 	<body>	
 		<header>
-			<a href="index.html" class="title">PAOLA REYES</a>
+			<a href="index.html" class="title">Paola Reyes</a>
 
 			<nav class="horizontal-bar inline-items">
 				<a href="#about">ABOUT</a>
@@ -39,31 +39,40 @@
 		</header>
 
 		<section class="main">
-			<div class="definition">
+			<div class="main-text">
 				<h1>Paola</h1>
-				<h2><i class="fa-solid fa-volume-high"></i>/'p&#601;-&#333;-l&#601;/</h2>
+				<div class="pronounciation inline-items">
+					<h2><i class="fa-solid fa-volume-high" onclick="document.getElementById('pronounce-audio').play()"></i></h2>
+					<h2 class="phonetic">/pa&#776;-'&#333;-la&#776;/</h2>
+				</div>
 				<h2>noun</h2>
-				<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt u</h3>
-				<h3>Lorem ipsum dolor sit amet, consectetur.</h3>
+				<ol>
+					<li><h3>a computer science student studying at the University of Illinois Chicago.</h3></li>
+      				<div class="sentence">Paola loves collaborating on creative coding projects.</div>
+					
+					<li><h3>a future full-stack software engineer.</h3></li>	
+					<div class="sentence">Paola wants to build applications that people love to use.</div>
+				</ol>
 			</div>
+			
 			<div class="main-img">
-				<!-- <img src="media/headshot.png" alt="Paola's headshot photo"/> -->
 				<img src="media/chicago.jpeg" alt="Image of Chicago"/>
 			</div>
+			
+			<audio id="pronounce-audio" src="https://en-audio.howtopronounce.com/16073220145fcdc99e43f3f.mp3"></audio>
 		</section>
 
 		<section class="about">
-			<div class="about-text">
-				<p><span id="fancy-text">H</span>owdy. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-			</div>
+			<p>Hi, I'm Paola! I'm a computer science student at the University of Illinois Chicago, 
+				where I'm honing my skills in programming, software development, and UX design. I'm passionate 
+				about creating user-friendly applications that make a difference in people's lives.
+			</p>
 
-			<div class="about-img">
-				<img src="media/bio-picture.jpg" alt="Image of Paola">
-			<div>
+			<img src="media/headshot.png" alt="Image of Paola">
 		</section>
 
 		<section class="skills">
-			<h1 class="three-dimensional-text">Skills.</h1>
+			<h1 class="title">Skills.</h1>
 
 			<div class="card-grid">
 				<div class="card">
@@ -85,43 +94,53 @@
 					</div>
 					<div class="card-content divided-list">
 						<h3>Python</h3>
-						<h3>C/C++</h3>
 						<h3>Java</h3>
+						<h3>C/C++</h3>
+						<h3>SQL</h3>
 						<h3>HTML/CSS</h3>
 						<h3>Javascript</h3>
 						<h3>React Native</h3>
+						<h3>Gherkin</h3>
 					</div>
 				</div>
 				<div class="card">
 					<div class="card-header">
-						<h2>Platforms <i class="fa-solid fa-server"></i></h2>
+						<h2>Technologies <i class="fa-solid fa-server"></i></h2>
 					</div>
 					<div class="card-content divided-list">
-						<h3>GitHub</h3>
-						<h3>VSCode</h3>
-						<h3>IntelliJ</h3>
+						<h3>AWS</h3>
+						<h3>Docker</h3>
+						<h3>Kubernetes</h3>
 						<h3>Figma</h3>
-						<h3>Microsoft Excel</h3>
-						<h3>Canva</h3>
-						<h3>Blender</h3>
+						<h3>Google Analytics</h3>
+						<h3>Jira</h3>
+						<h3>DBeaver</h3>
+						<h3>Postman</h3>
 					</div>
 				</div>	
 				<div class="card">
 					<div class="card-header">
-						<h2>Methodolgies <i class="fa-solid fa-person-skiing"></i></h2>
+						<h2>Experience <i class="fa-solid fa-person-digging"></i></h2>
 					</div>
 					<div class="card-content divided-list">
-						<h3>Agile</h3>
-						<h3>hi</h3>
+						<h3>UX Research</h3>
+						<h3>Focus group moderation</h3>
+						<h3>Web app design</h3>
+						<h3>Integration testing</h3>
+						<h3>Agile teamwork</h3>
 					</div>
 				</div>
 				<div class="card">
 					<div class="card-header">
-						<h2>Soft <i class="fa-solid fa-person-digging"></i></h2>
+						<h2>Soft <i class="fa-solid fa-rainbow"></i></h2>
 					</div>
 					<div class="card-content divided-list">
-						<h3>hi</h3>
-						<h3>hi</h3>
+						<h3>Strategist</h3>
+						<h3>Goal-oriented</h3>
+						<h3>Patient</h3>
+						<h3>Curious</h3>
+						<h3>Resilient</h3>
+						<h3>Empathetic</h3>
 					</div>
 				</div>
 				<div class="card">
@@ -158,11 +177,13 @@
 					</div>
 					<div class="card-content divided-list">
 						<h3>Python</h3>
-						<h3>C/C++</h3>
 						<h3>Java</h3>
+						<h3>C/C++</h3>
+						<h3>SQL</h3>
 						<h3>HTML/CSS</h3>
 						<h3>Javascript</h3>
 						<h3>React Native</h3>
+						<h3>Gherkin</h3>
 					</div>
 				</div>
 				<div class="card carousel-cell">
@@ -170,31 +191,39 @@
 						<h2>Platforms <i class="fa-solid fa-server"></i></h2>
 					</div>
 					<div class="card-content divided-list">
-						<h3>GitHub</h3>
-						<h3>VSCode</h3>
-						<h3>IntelliJ</h3>
+						<h3>AWS</h3>
+						<h3>Docker</h3>
+						<h3>Kubernetes</h3>
 						<h3>Figma</h3>
-						<h3>Microsoft Excel</h3>
-						<h3>Canva</h3>
-						<h3>Blender</h3>
+						<h3>Google Analytics</h3>
+						<h3>Jira</h3>
+						<h3>DBeaver</h3>
+						<h3>Postman</h3>
 					</div>
 				</div>	
 				<div class="card carousel-cell">
 					<div class="card-header">
-						<h2>Methodolgies <i class="fa-solid fa-person-skiing"></i></h2>
+						<h2>Experience <i class="fa-solid fa-person-digging"></i></h2>
 					</div>
 					<div class="card-content divided-list">
-						<h3>Agile</h3>
-						<h3>hi</h3>
+						<h3>UX Research</h3>
+						<h3>Focus group moderation</h3>
+						<h3>Web app design</h3>
+						<h3>Integration testing</h3>
+						<h3>Agile teamwork</h3>
 					</div>
 				</div>
 				<div class="card carousel-cell">
 					<div class="card-header">
-						<h2>Soft <i class="fa-solid fa-person-digging"></i></h2>
+						<h2>Soft <i class="fa-regular fa-handshake"></i></h2>
 					</div>
 					<div class="card-content divided-list">
-						<h3>hi</h3>
-						<h3>hi</h3>
+						<h3>Strategist</h3>
+						<h3>Goal-oriented</h3>
+						<h3>Patient</h3>
+						<h3>Curious</h3>
+						<h3>Resilient</h3>
+						<h3>Empathetic</h3>
 					</div>
 				</div>
 				<div class="card carousel-cell">
@@ -209,19 +238,23 @@
 					</div>
 				</div>
 			</div> 
+
+			<div class="btn-container">
+				<button class="next-btn btn-light" onclick="window.location.href='portfolio.html'">VIEW PORTFOLIO<i class="fa-solid fa-angle-right"></i></div></button>
+			</div>
 		</section> 
 
-		<footer class="inline-items">
-			<span class="social-media inline-items">
+		<footer>
+			<div class="social-media inline-items">
 				<a href="https://github.com/paola-reyes" target="_blank">
-					<i class="fa-brands fa-github hover-hidden"></i>
-					<i class="fa-brands fa-github fa-flip hover-show"></i>
+				<i class="fa-brands fa-github hover-hidden"></i>
+				<i class="fa-brands fa-github fa-flip hover-show"></i>
 				</a>
 				<a href="https://www.linkedin.com/in/paola-reyes9/" target="_blank">
-					<i class="fa-brands fa-linkedin hover-hidden"></i>
-					<i class="fa-brands fa-linkedin fa-flip hover-show"></i>
+				<i class="fa-brands fa-linkedin hover-hidden"></i>
+				<i class="fa-brands fa-linkedin fa-flip hover-show"></i>
 				</a>
-			</span>
+			</div>
 
 			<p>Copyright &copy;<script type="text/javascript">document.write(new Date().getFullYear());</script> Paola Reyes. All rights reserved.</p>
 		</footer>
