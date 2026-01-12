@@ -1,137 +1,146 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>Paola Reyes - Project</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="media/flower.png">
+        <link href="style.css" rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        <script src="https://kit.fontawesome.com/b263e51847.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    </head>
 
-<head>
-    <title>Paola Reyes - Project</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="media/flower.png">
-    <link href="style.css" rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <script src="https://kit.fontawesome.com/b263e51847.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-</head>
+    <!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-51RF7HF3YE"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
 
-<body>
-    <header>
-        <a href="index.html" class="title">Paola Reyes</a>
+		gtag('config', 'G-51RF7HF3YE');
+	</script>
 
-        <nav class="horizontal-bar inline-items">
-            <a href="index.html">ABOUT</a>
-            <a href="portfolio.html">PORTFOLIO</a>
-        </nav>
+    <body>
+        <header>
+            <a href="index.html" class="title">Paola Reyes</a>
 
-        <!-- For smaller screens -->
-        <div class="menu-symbol material-symbols-outlined">menu</div>
-        <nav class="side-bar">
-            <a href="#about">ABOUT</a>
-            <a href="portfolio.html">PORTFOLIO</a>
-        </nav>
-    </header>
+            <nav class="horizontal-bar inline-items">
+                <a href="index.html">ABOUT</a>
+                <a href="portfolio.html">PORTFOLIO</a>
+            </nav>
 
-    <section class="project-overview main">
-        <div class="main-text">
-            <h1>toscaartwork</h1>
-            <h3 class="subheading">Sharing a poignant commentary on identity and agency.</h3>
+            <!-- For smaller screens -->
+            <div class="menu-symbol material-symbols-outlined">menu</div>
+            <nav class="side-bar">
+                <a href="#about">ABOUT</a>
+                <a href="portfolio.html">PORTFOLIO</a>
+            </nav>
+        </header>
 
-            <h2>Overview</h2>
-            <p>toscaartwork is a professional website for Chicago-based artist, Kaelyn Andrade.
-                It is a living portfolio of her life's work and builds upon her connection to the arts community. 
+        <section class="project-overview main">
+            <div class="main-text">
+                <h1>toscaartwork</h1>
+                <h3 class="subheading">Sharing a poignant commentary on identity and agency.</h3>
+
+                <h2>Overview</h2>
+                <p>toscaartwork is a professional website for Chicago-based artist, Kaelyn Andrade.
+                    It is a living portfolio of her life's work and builds upon her connection to the arts community. 
+                </p>
+            </div>
+
+            <div class="thumbnail hover-shift">
+                <img src="media/toscaart-thumbnail.png" alt="toscaartwork landing page">
+            </div>
+        </section>
+
+        <section class="project-details">
+            <div class="details-text">
+                <h1>Functionality</h1>
+
+                <h2>An electronic gallery delving into the intersections of history and identity.</h2>
+                <p>Andrade's art provides a poignant commentary on the ways history and colonization continue to influence 
+                    and restrict marginalized groups, offering a unique perspective on the impact of historical and 
+                    contemporary issues on identity and agency. The website presents her paintings series, among them 
+                    <span class="text-highlight">
+                        <a href="https://toscaartwork.com/memorias-de-cobre.html" target="_blank"><i>Memorias de cobre</i></a>
+                    </span>, 
+                    <span class="text-highlight">
+                        <a href="https://toscaartwork.com/amor-y-brujeria.html" target="_blank"><i>Amor y brujer&iacute;a entre generaciones</i></a>
+                    </span>,
+                    and <span class="text-highlight">
+                        <a href="https://toscaartwork.com/quinceanera.html" target="_blank"><i>Quincea&ntilde;era Series</i></a>
+                    </span>.
+                </p>
+
+                <h2>Delivering art experiences to communities in Chicago.</h2>
+                <p>Andrade hosts <span class="text-highlight">art workshops</span> to foster the artistic growth and development of artists of all backgrounds. 
+                    They serve as a place where artists can come together to expand their 
+                    creativity and hone their artistic abilities. Those looking to <span class="text-highlight">schedule a workshop</span> can fill out a request form on the website.
+                </p>
+
+                <h1>Technologies</h1>
+
+                <div class="tech-stack">
+                    <table>
+                        <tr>
+                            <th>Frontend</th>
+                        </tr>
+                        <td>HTML</td>
+                        <tr>
+                            <td>CSS</td>
+                        </tr>
+                        <tr>
+                            <td>JavaScript</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="carousel" data-flickity='{ "wrapAround": true, "imagesLoaded": true}'>
+                <div class="carousel-cell">
+                    <img src="media/toscaart-thumbnail.png" alt="BookClub project preview">
+                </div>
+                <div class="carousel-cell">
+                    <img src="media/toscaartwork-gallery1.png" alt="BookClub project preview">
+                </div>
+                <div class="carousel-cell">
+                    <img src="media/toscaartwork-gallery2.png" alt="BookClub project preview">
+                </div>
+                <div class="carousel-cell">
+                    <img src="media/toscaartwork-statement.png" alt="BookClub project preview">
+                </div>
+                <div class="carousel-cell">
+                    <img src="media/toscaartwork-bio.png" alt="BookClub project preview">
+                </div>
+                <div class="carousel-cell">
+                    <img src="media/toscaartwork-workshop.png" alt="toscaartwork workshop request form"/>
+                </div>
+            </div>
+
+            <div class="btn-container">
+                <button class="view-btn btn-dark" onclick="window.open('https://toscaartwork.com', '_blank');">View Website<i
+                        class="fa-solid fa-angle-right"></i></button>
+            </div>
+        </section>
+
+        <footer>
+            <div class="social-media inline-items">
+                <a href="https://github.com/paola-reyes" target="_blank">
+                    <i class="fa-brands fa-github hover-hidden"></i>
+                    <i class="fa-brands fa-github fa-flip hover-show"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/paola-reyes9/" target="_blank">
+                    <i class="fa-brands fa-linkedin hover-hidden"></i>
+                    <i class="fa-brands fa-linkedin fa-flip hover-show"></i>
+                </a>
+            </div>
+
+            <p>Copyright &copy;
+                <script type="text/javascript">document.write(new Date().getFullYear());</script> Paola Reyes. All rights
+                reserved.
             </p>
-        </div>
-
-        <div class="thumbnail hover-shift">
-            <img src="media/toscaart-thumbnail.png" alt="toscaartwork landing page">
-        </div>
-    </section>
-
-    <section class="project-details">
-        <div class="details-text">
-            <h1>Functionality</h1>
-
-            <h2>An electronic gallery delving into the intersections of history and identity.</h2>
-            <p>Andrade's art provides a poignant commentary on the ways history and colonization continue to influence 
-                and restrict marginalized groups, offering a unique perspective on the impact of historical and 
-                contemporary issues on identity and agency. The website presents her paintings series, among them 
-                <span class="text-highlight">
-                    <a href="https://toscaartwork.com/memorias-de-cobre.html" target="_blank"><i>Memorias de cobre</i></a>
-                </span>, 
-                <span class="text-highlight">
-                    <a href="https://toscaartwork.com/amor-y-brujeria.html" target="_blank"><i>Amor y brujer&iacute;a entre generaciones</i></a>
-                </span>,
-                and <span class="text-highlight">
-                    <a href="https://toscaartwork.com/quinceanera.html" target="_blank"><i>Quincea&ntilde;era Series</i></a>
-                </span>.
-            </p>
-
-            <h2>Delivering art experiences to communities in Chicago.</h2>
-            <p>Andrade hosts <span class="text-highlight">art workshops</span> to foster the artistic growth and development of artists of all backgrounds. 
-                They serve as a place where artists can come together to expand their 
-                 creativity and hone their artistic abilities. Those looking to <span class="text-highlight">schedule a workshop</span> can fill out a request form on the website.
-            </p>
-
-            <h1>Technologies</h1>
-
-            <div class="tech-stack">
-                <table>
-                    <tr>
-                        <th>Frontend</th>
-                    </tr>
-                    <td>HTML</td>
-                    <tr>
-                        <td>CSS</td>
-                    </tr>
-                    <tr>
-                        <td>JavaScript</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-
-        <div class="carousel" data-flickity='{ "wrapAround": true, "imagesLoaded": true}'>
-            <div class="carousel-cell">
-                <img src="media/toscaart-thumbnail.png" alt="BookClub project preview">
-            </div>
-            <div class="carousel-cell">
-                <img src="media/toscaartwork-gallery1.png" alt="BookClub project preview">
-            </div>
-            <div class="carousel-cell">
-                <img src="media/toscaartwork-gallery2.png" alt="BookClub project preview">
-            </div>
-            <div class="carousel-cell">
-                <img src="media/toscaartwork-statement.png" alt="BookClub project preview">
-            </div>
-            <div class="carousel-cell">
-                <img src="media/toscaartwork-bio.png" alt="BookClub project preview">
-            </div>
-            <div class="carousel-cell">
-                <img src="media/toscaartwork-workshop.png" alt="toscaartwork workshop request form"/>
-            </div>
-        </div>
-
-        <div class="btn-container">
-            <button class="view-btn btn-dark" onclick="window.open('https://toscaartwork.com', '_blank');">View Website<i
-                    class="fa-solid fa-angle-right"></i></button>
-        </div>
-    </section>
-
-    <footer>
-        <div class="social-media inline-items">
-            <a href="https://github.com/paola-reyes" target="_blank">
-                <i class="fa-brands fa-github hover-hidden"></i>
-                <i class="fa-brands fa-github fa-flip hover-show"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/paola-reyes9/" target="_blank">
-                <i class="fa-brands fa-linkedin hover-hidden"></i>
-                <i class="fa-brands fa-linkedin fa-flip hover-show"></i>
-            </a>
-        </div>
-
-        <p>Copyright &copy;
-            <script type="text/javascript">document.write(new Date().getFullYear());</script> Paola Reyes. All rights
-            reserved.
-        </p>
-    </footer>
-</body>
+        </footer>
+    </body>
 </html>
