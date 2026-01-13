@@ -735,7 +735,7 @@ table {
       display: flex;
     }
   footer {
-    padding: 10px 20px;
+    padding: 10px 30px;
   }
     footer p {
       font-size: 14px;
@@ -810,11 +810,6 @@ table {
   .circle-tags-list {
     row-gap: 0px;
   }
-  .thumbnail img:not(#utkPreview) {
-    width: 95%;
-    height: auto;
-    aspect-ratio: 16 / 9;
-  }
   .project-overview .thumbnail {
     min-width: 100%;
     margin: 20px 0px;
@@ -836,14 +831,13 @@ table {
     gap: 8px;
   }
   .social-media .fa-brands {
-    font-size: 24px;
+    font-size: 28px;
   }
   footer {
-    padding: 20px 10px;
     gap: 10px;
   }
   footer p {
-    font-size: 12px;
+    font-size: 9px;
     margin: 5px 0px;
   }
 }
