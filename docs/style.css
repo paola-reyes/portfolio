@@ -42,10 +42,11 @@ header {
   font: 42px "Oswald", sans-serif;
   text-decoration: none;
   letter-spacing: 2px;
+  color: white;
 }
-  .title:hover, .title:visited {
+  .title a, .title:link, .title:hover, .title:visited {
     color: white;
-  }  
+  }
 
 .horizontal-bar {
   gap: 40px;
@@ -309,7 +310,7 @@ footer {
   footer i {
     font-size: 24px;
   }
-  footer a, a:hover, a:visited {
+  footer a, a:link, a:hover, a:visited {
     color: white;
   }
   footer p {
@@ -339,6 +340,10 @@ footer {
 
 .portfolio .card-header h2 {
   margin: 0px;
+  padding-left: 70px;
+  padding-top: 8px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .portfolio .card-content {
@@ -378,10 +383,10 @@ footer {
 
 .window-buttons {
   left: 15px;
-  margin: 10px;
   position: absolute;
   display: flex;
   gap: 10px;
+  z-index: 10;
 }
 
 .circle-tags-list {
@@ -677,12 +682,10 @@ table {
   .card-content {
     padding: 15px;
   }
-  .portfolio .card {
-    width: 100%;
-    margin: 30px 0px;
-  }
   .portfolio .card-header h2 {
     font-size: 18px;
+    padding-left: 70px;
+    padding-top: 8px;
   }
   .portfolio .card-content {
     padding: 30px;
@@ -781,7 +784,6 @@ table {
     margin: 50px 0px 0px;
   }
   .main-text h1 {
-    font-size: 42px;
     margin: 50px 0px 10px;
   }
   .quote {
@@ -801,14 +803,11 @@ table {
     font-family: "Playfair Display", serif;
     margin-bottom: 50px;
   }
-  .portfolio .card-header h2 {
-    font-size: 25px;
+  .portfolio .card {
+    width: 85%;
   }
-  .portfolio .card-content h3 {
-    font-size: 22px;
-  }
-  .portfolio .card-content h4 {
-    font-size: 18px;
+  .circle-tags-list {
+    row-gap: 0px;
   }
   .thumbnail img {
     width: 95%;
@@ -821,9 +820,12 @@ table {
     min-width: 100%;
     margin: 20px 0px;
   }
+  table {
+    margin: 25px 0px 50px;
+  }
   th, td {
-    font-size: 18px;
-    padding: 10px 20px;
+    font-size: 16px;
+    padding: 18px 20px;
   }
   .poster img {
     width: 100%;
@@ -838,7 +840,7 @@ table {
     font-size: 24px;
   }
   footer {
-    padding: 10px;
+    padding: 20px 10px;
     gap: 10px;
   }
   footer p {
