@@ -93,11 +93,6 @@ header {
   z-index: 100;
   position: fixed;
 }
-
-.sidebar-menu::after {
-  
-  transition: all 0.5s ease;
-}
   .close-symbol {
     color: black;
     cursor: pointer;
@@ -118,7 +113,7 @@ header {
   .sidebar-menu a, .sidebar-menu a:link, .sidebar-menu a:hover, .sidebar-menu a:visited {
     color: black;
   }
-  .sliding-underline::after {
+  .sidebar-menu .sliding-underline::after {
     background-color: black;
   }
 
@@ -351,6 +346,9 @@ header {
 .social-media {
   gap: 25px; 
 }
+  .social-media .fa-brands {
+    font-size: 30px;
+  }
   .social-media a, a:link {
     text-decoration: none;
   }
@@ -360,9 +358,6 @@ header {
   .social-media a:hover .hover-hidden, 
   .social-media a .hover-show {
     display: none; 
-  }
-  .social-media .fa-brands {
-    font-size: 30px;
   }
    
 footer {
@@ -536,6 +531,7 @@ footer {
 .hover-shift img:hover { 
   transform: translateY(-8px); 
   transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
 }
 
 .project-details {
@@ -635,6 +631,9 @@ table {
   .project-details .carousel-cell img {
     display: block;
     height: 500px;
+  } 
+  .project-details .carousel-cell img:hover {
+    cursor: pointer;
   }
 
 .poster {
