@@ -26,17 +26,6 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-  header a:not(.title) {
-    font: 16px "Roboto", sans-serif;
-    letter-spacing: 1px;
-  }
-  header a, a:link {
-    text-decoration: none;
-    color: white; 
-  }
-  header a:hover {
-    color: lightgray; 
-  }
   
 .title {
   font: 42px "Oswald", sans-serif;
@@ -44,15 +33,43 @@ header {
   letter-spacing: 2px;
   color: white;
 }
-  .title a, .title:link, .title:hover, .title:visited {
+  .title a, .title:link, .title:hover, .title:visited,
+  .nav-link a, .nav-link:link, .nav-link:hover, .nav-link:visited {
     color: white;
   }
 
-.horizontal-bar {
+.nav-link {
+  font: 16px "Roboto", sans-serif;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.sliding-underline {
+  display: inline-block;
+  position: relative;
+}
+  .sliding-underline::after {
+    content: '';
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: -5px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: transform 0.5s ease-out;
+  }
+  .sliding-underline:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+.header-menu {
   gap: 40px;
 }
 
-.menu-symbol, .side-bar {
+.menu-symbol, .sidebar-menu {
   display: none !important;
 }
 
@@ -103,6 +120,7 @@ header {
 
 .fa-volume-high {
   cursor: pointer;
+  color: rgb(62, 59, 59);
 }
   .fa-volume-high:hover {
     color: rgb(137, 136, 136); 
@@ -716,7 +734,7 @@ table {
   header {
     padding: 25px 40px;
   }
-  .horizontal-bar {
+  .header-menu {
     display: none !important;
   }
   .menu-symbol {
@@ -724,18 +742,18 @@ table {
     color: white;
     cursor: pointer;
   }
-  .side-bar {
+  .sidebar-menu {
     display: none;
     background-color: white; 
   }
-    .side-bar a, a:link {
+    .sidebar-menu a, a:link {
       color: black;
     }
-    .side-bar .active {
+    .sidebar-menu .active {
       display: flex;
     }
   footer {
-    padding: 10px 20px;
+    padding: 10px 30px;
   }
     footer p {
       font-size: 14px;
@@ -746,7 +764,7 @@ table {
   header {
     padding: 16px 30px;
   }
-  .horizontal-bar {
+  .header-menu {
     display: none !important;
   }
   .menu-symbol {
@@ -810,11 +828,6 @@ table {
   .circle-tags-list {
     row-gap: 0px;
   }
-  .thumbnail img:not(#utkPreview) {
-    width: 95%;
-    height: auto;
-    aspect-ratio: 16 / 9;
-  }
   .project-overview .thumbnail {
     min-width: 100%;
     margin: 20px 0px;
@@ -836,14 +849,13 @@ table {
     gap: 8px;
   }
   .social-media .fa-brands {
-    font-size: 24px;
+    font-size: 28px;
   }
   footer {
-    padding: 20px 10px;
     gap: 10px;
   }
   footer p {
-    font-size: 12px;
+    font-size: 9px;
     margin: 5px 0px;
   }
 }
