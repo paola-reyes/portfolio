@@ -5,8 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="media/flower.png">
         <link href="style.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
-        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
         <script src="https://kit.fontawesome.com/b263e51847.js" crossorigin="anonymous"></script>
         <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     </head>
@@ -23,21 +23,37 @@
 
     <body>
         <header>
-            <a href="index.html" class="title">Paola Reyes</a>
+			<a href="index.html" class="title">Paola Reyes</a>
 
-            <nav class="header-menu inline-items">
-                <a class="nav-link sliding-underline" href="index.html">ABOUT</a>
-                <a class="nav-link sliding-underline" href="portfolio.html">PORTFOLIO</a>
-            </nav>
+			<nav class="header-menu inline-items">
+				<a class="nav-link sliding-underline" href="index.html">ABOUT</a>
+				<a class="nav-link sliding-underline" href="portfolio.html">PORTFOLIO</a>
+			</nav>
 
-            <!-- For smaller screens -->
-            <div class="menu-symbol material-symbols-outlined">menu</div>
-            
-            <nav class="sidebar-menu">
-                <a class="nav-link sliding-underline" href="about.html">ABOUT</a>
-                <a class="nav-link sliding-underline" href="portfolio.html">PORTFOLIO</a>
-            </nav>
-        </header>
+			<!-- For smaller screens -->
+			<span class="menu-symbol material-icons hidden">menu</span>
+
+			<!-- Sidebar menu -->
+			<div class="opaque-overlay hidden"></div>
+			
+			<nav class="sidebar-menu hidden">
+				<span class="close-symbol material-icons">close</span>
+			
+				<a class="nav-link sliding-underline" href="index.html">ABOUT</a>
+				<a class="nav-link sliding-underline" href="portfolio.html">PORTFOLIO</a>
+
+				<span class="social-media inline-items">
+					<a href="https://github.com/paola-reyes" target="_blank">
+						<i class="fa-brands fa-github hover-hidden"></i>
+						<i class="fa-brands fa-github fa-flip hover-show"></i>
+					</a>
+					<a href="https://www.linkedin.com/in/paola-reyes9/" target="_blank">
+						<i class="fa-brands fa-linkedin hover-hidden"></i>
+						<i class="fa-brands fa-linkedin fa-flip hover-show"></i>
+					</a>
+				</span>
+			</nav>
+		</header>
 
         <section class="project-overview main">
             <div class="main-text">
@@ -129,5 +145,7 @@
                 reserved.
             </p>
         </footer>
+
+        <script src="script.js"></script>
     </body>
 </html>

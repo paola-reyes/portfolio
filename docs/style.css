@@ -69,9 +69,58 @@ header {
   gap: 40px;
 }
 
-.menu-symbol, .sidebar-menu {
+.hidden {
   display: none !important;
 }
+
+.opaque-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 10;
+  position: fixed;
+}
+
+.sidebar-menu {
+  background-color: white;
+  width: 45vw;
+  height: 100vh;
+  padding: 30px 40px;
+  top: 0px;
+  right: 0px;
+  z-index: 100;
+  position: fixed;
+}
+
+.sidebar-menu::after {
+  
+  transition: all 0.5s ease;
+}
+  .close-symbol {
+    color: black;
+    cursor: pointer;
+    float: right;
+  }
+  .sidebar-menu .nav-link {
+    font-size: 20px;
+    display: flex;
+    margin: 25px 0px 25px;
+  }
+  .sidebar-menu .social-media {
+    padding: 25px 0px;
+    gap: 30px;
+  }
+  .sidebar-menu .social-media .fa-brands {
+    font-size: 34px;
+  }
+  .sidebar-menu a, .sidebar-menu a:link, .sidebar-menu a:hover, .sidebar-menu a:visited {
+    color: black;
+  }
+  .sliding-underline::after {
+    background-color: black;
+  }
 
 .main {
   background-color: white;
@@ -742,16 +791,6 @@ table {
     color: white;
     cursor: pointer;
   }
-  .sidebar-menu {
-    display: none;
-    background-color: white; 
-  }
-    .sidebar-menu a, a:link {
-      color: black;
-    }
-    .sidebar-menu .active {
-      display: flex;
-    }
   footer {
     padding: 16px 30px;
   }
