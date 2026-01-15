@@ -826,6 +826,10 @@ table {
     color: white;
     cursor: pointer;
   }
+  .poster img {
+    width: 100%;
+    height: auto;
+  }
   footer {
     padding: 16px 30px;
   }
@@ -916,10 +920,6 @@ table {
   th, td {
     font-size: 16px;
     padding: 18px 20px;
-  }
-  .poster img {
-    width: 100%;
-    height: auto;
   }
   .view-btn {
     font-size: 18px;
