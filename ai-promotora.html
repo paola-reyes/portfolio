@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Paola Reyes — AI-Promotora</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="assets/logo.png" sizes="16x16">
+        <link href="style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        <script src="https://kit.fontawesome.com/b263e51847.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    </head>
+
+    <!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-51RF7HF3YE"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-51RF7HF3YE');
+	</script>
+
+    <body>
+        <header>
+			<a href="index.html" class="title">Paola Reyes</a>
+
+			<nav class="header-menu inline-items">
+				<a class="nav-link sliding-underline" href="index.html">ABOUT</a>
+				<a class="nav-link sliding-underline" href="portfolio.html">PORTFOLIO</a>
+			</nav>
+
+			<!-- For smaller screens -->
+			<span class="menu-symbol material-icons hidden">menu</span>
+
+			<!-- Sidebar menu -->
+			<div class="opaque-overlay hidden"></div>
+			
+			<nav class="sidebar-menu hidden">
+				<span class="close-symbol material-icons">close</span>
+			
+				<a class="nav-link sliding-underline" href="index.html">ABOUT</a>
+				<a class="nav-link sliding-underline" href="portfolio.html">PORTFOLIO</a>
+
+				<span class="social-media inline-items">
+					<a href="https://github.com/paola-reyes" target="_blank">
+						<i class="fa-brands fa-github hover-hidden"></i>
+						<i class="fa-brands fa-github fa-flip hover-show"></i>
+					</a>
+					<a href="https://www.linkedin.com/in/paola-reyes9/" target="_blank">
+						<i class="fa-brands fa-linkedin hover-hidden"></i>
+						<i class="fa-brands fa-linkedin fa-flip hover-show"></i>
+					</a>
+				</span>
+			</nav>
+		</header>
+
+        <section class="project-overview main">
+            <div class="main-text">
+                <h1>AI-Promotora</h1>
+                <h3 class="subheading">A digitally synthesized person created to help members of the Latinx community learn about Alzheimer's disease.</h3>
+
+                <h2>Overview</h2>
+                <p>This app is designed to be culturally relevant and accessible to the community, and it covers topics such as mental health, caregiving tips, and chronic disease management.        </p>
+            </div>
+
+            <div class="thumbnail mobile-img hover-shift zoomable">
+                <img src="assets/aipromotora-thumbnail.png" alt="toscaartwork landing page">
+            </div>
+        </section>
+
+        <section class="project-details">
+            <div class="details-text">
+                <h1>Our Research</h1>
+
+                <h2>Delivering art experiences to communities in Chicago.</h2>
+                <p>Andrade hosts <span class="text-highlight">art workshops</span> to foster the artistic growth and development of artists of all backgrounds. 
+                    They serve as a place where artists can come together to expand their 
+                    creativity and hone their artistic abilities. Those looking to <span class="text-highlight">schedule a workshop</span> can fill out a request form on the website.
+                </p>
+
+                <div class="logos-list">
+                    <img src="assets/rush-logo.png" alt="Rush University Medical Center logo"/>
+                    <img src="assets/lacare-logo.jpg" alt="LACARE logo"/>
+                    <img src="assets/uic-logo.png" alt="UIC logo"/>
+                </div>
+
+                <h1>Technologies</h1>
+
+                <div class="tech-stack">
+                    <table>
+                        <tr>
+                            <th>Frontend</th>
+                            <th>Backend</th>
+                        </tr>
+                        <tr>
+                            <td>Synthesia</td>
+                            <td>Python</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="carousel carousel-mobile" data-flickity='{ "wrapAround": true, "imagesLoaded": true}'>
+                <div class="carousel-cell zoomable zoomable-mobile">
+                    <img src="assets/aipromotora1.png" alt="AI Promotora screenshot">
+                </div>
+                <div class="carousel-cell zoomable zoomable-mobile">
+                    <img src="assets/aipromotora2.png" alt="AI Promotora screenshot">
+                </div>
+                <div class="carousel-cell zoomable zoomable-mobile">
+                    <img src="assets/aipromotora3.png" alt="AI Promotora screenshot">
+                </div>
+                <div class="carousel-cell zoomable zoomable-mobile">
+                    <img src="assets/aipromotora4.png" alt="AI Promotora screenshot">
+                </div>
+                <div class="carousel-cell zoomable zoomable-mobile">
+                    <img src="assets/aipromotora5.png" alt="AI Promotora screenshot">
+                </div>
+            </div>
+
+            <div class="btn-container">
+                <!-- https://c3en-web-page.pages.dev/ -->
+                <button class="view-btn btn-dark" onclick="window.open('https://lacareillinois.org/en/ai-promotora/', '_blank');">
+                    View App
+                    <i class="fa-solid fa-angle-right"></i>
+                </button>
+            </div>
+        </section>
+
+        <footer>
+            <div class="social-media inline-items">
+                <a href="https://github.com/paola-reyes" target="_blank">
+                    <i class="fa-brands fa-github hover-hidden"></i>
+                    <i class="fa-brands fa-github fa-flip hover-show"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/paola-reyes9/" target="_blank">
+                    <i class="fa-brands fa-linkedin hover-hidden"></i>
+                    <i class="fa-brands fa-linkedin fa-flip hover-show"></i>
+                </a>
+            </div>
+
+            <p>Copyright &copy;
+                <script type="text/javascript">document.write(new Date().getFullYear());</script> Paola Reyes. All rights
+                reserved.
+            </p>
+        </footer>
+
+        <!-- Show close up of image -->
+        <div class="modal hidden">
+            <span class="close-symbol material-icons">close</span>
+            <img src="#"/>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

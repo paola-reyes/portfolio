@@ -423,6 +423,9 @@ footer {
   display: flex;
   justify-content: center;
 }
+  .thumbnail .mobile-img {
+    border: 10px solid yellow;
+  }
 
 .thumbnail img:not(#utkPreview) {
   width: 100%;
@@ -522,6 +525,10 @@ footer {
     max-width: 55%;
     flex-shrink: 1;
   }
+  .project-overview .thumbnail .mobile-img img {
+    height: 500px;
+    width: auto;
+  }
 
 .modal {
   width: 80%;
@@ -552,6 +559,10 @@ footer {
   .modal .close-symbol:hover {
     color: rgb(193, 193, 193);
   }
+
+.modal-mobile {
+  width: 300px;
+}
 
 .subheading {
   color: gray;
@@ -605,6 +616,19 @@ footer {
   display: flex;
   justify-content: center;
 }
+
+
+.logos-list {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin: 50px 0px;
+}
+  .logos-list img {
+    width: 200px;
+    height: auto;
+  }
+
 
 table {
   font-size: 20px;
@@ -665,6 +689,16 @@ table {
   } 
   .project-details .is-selected img:hover {
     cursor: pointer;
+  }
+  .project-details .carousel .mobile-img {
+    width: 100px;
+    margin: 100px auto;
+  }
+  .project-details .mobile-img .carousel-cell {
+    width: 400px;
+  }
+  .project-details .mobile-img .carousel-cell img {
+    height: 500px;
   }
 
 .poster {

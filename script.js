@@ -42,19 +42,16 @@ function showCloseup(e) {
     // Set close up image to selected image
     modalImage.src = e.target.src;
 
-    // Ignore carousel cells that are not being viewed (to avoid accidental zoom)
-    let clickedCell = e.target.closest(".zoomable");
-    
-    if (clickedCell.classList.contains("carousel-cell") && !clickedCell.classList.contains("is-selected")) {
-        return ;
-    }
+    // Change modal size for mobile app images
+    if (modal.classList.contains("mobile-img"))
+        modal.classList.add("modal-mobile"); 
 
     // Show modal + opaque background
     if (modal.classList.contains("hidden"))
         modal.classList.remove("hidden");
 
     if (opaqueBackground.classList.contains("hidden"))
-        opaqueBackground.classList.remove("hidden");
+        opaqueBackground.classList.remove("hidden");   
 };
 
 // Function to hide close-up image
