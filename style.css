@@ -199,10 +199,12 @@ header {
   }
   .about img {
     width: 300px;
-    height: 400px;
+    height: auto;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
-    border-radius: 150px;
+    border-radius: 50%;
     margin: 40px;
+    flex-shrink: 0;
   }
 
 .quote {
@@ -423,21 +425,24 @@ footer {
   display: flex;
   justify-content: center;
 }
-  .thumbnail .mobile-img {
-    border: 10px solid yellow;
+  .thumbnail img {
+    width: 100%;
+    max-width: 1300px;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border: 1.5px solid lightgray;
+    border-radius: 5px;
+    box-shadow: 3px 5px 5px rgb(226, 224, 224); 
+    margin: 30px;
   }
-
-.thumbnail img:not(#utkPreview) {
-  width: 100%;
-  max-width: 1300px;
-  height: auto;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-  border: 1.5px solid lightgray;
-  border-radius: 5px;
-  box-shadow: 3px 5px 5px rgb(226, 224, 224); 
-  margin: 30px;
-}
+  .thumbnail.mobile-img img {
+    height: 400px;
+    width: auto;
+    max-height: 70vh;
+    aspect-ratio: auto;
+    object-fit: contain;
+  }
 
 #utkPreview {
   width: 300px;
@@ -508,6 +513,9 @@ footer {
   display: flex;
   align-items: center;
 }
+  .project-overview .main-text {
+    max-width: 800px;
+  }
   .project-overview .main-text h1 {
     margin-top: 50px; 
   }
@@ -525,13 +533,16 @@ footer {
     max-width: 55%;
     flex-shrink: 1;
   }
-  .project-overview .thumbnail .mobile-img img {
-    height: 500px;
+  .project-overview .thumbnail.mobile-img {
+    margin-right: 150px;
+  }
+  .project-overview .thumbnail.mobile-img img {
+    height: 450px;
     width: auto;
   }
 
 .modal {
-  width: 80%;
+  width: fit-content;
   height: auto;
   max-width: 80vw;
   max-height: 80vh;
@@ -542,10 +553,11 @@ footer {
   z-index: 20;
 }
   .modal img {
-    width: 100%;
+    display: block;
+    width: auto;
     height: auto;
-    max-height: 100vh;
-    max-width: 100vw;
+    max-height: 80vh;
+    max-width: 80vw;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
     border-radius: 5px;
     object-fit: contain;
@@ -560,8 +572,8 @@ footer {
     color: rgb(193, 193, 193);
   }
 
-.modal-mobile {
-  width: 300px;
+.modal.modal-mobile {
+  width: fit-content;
 }
 
 .subheading {
@@ -590,12 +602,11 @@ footer {
     color: rgb(194, 155, 211);    
     font: 25px "Playfair Display", serif;
     font-weight: 600;
-    margin: 55px 15px 15px;
+    margin: 55px 0px 15px;
   }
   .project-details p {
     width: 80%;
     font-size: 18px;
-    margin-left: 15px;
     line-height: 1.5;
   }
 
@@ -679,6 +690,15 @@ table {
   margin: 100px; 
   background: rgba(255, 255, 255, 0.9);
 }
+  .project-details .carousel.carousel-mobile {
+    width: min(500px, 100%);
+    margin: 100px auto;
+  }
+  .project-details .carousel.carousel-mobile .carousel-cell {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+  }
   .project-details .carousel-cell {
     margin-right: 20px;
     overflow: hidden;
@@ -725,6 +745,9 @@ table {
 }
 
 @media (max-width: 1100px) {
+  .project-overview {
+    background-color: yellow;
+  }
   .about {
     display: flex;
     justify-content: center;
@@ -734,13 +757,14 @@ table {
     width: 90%;
   }
   .about img {
-    width: 250px;
-    height: 350px;
     margin: 10px;
   }
 }
 
 @media (max-width: 1024px) {
+  .project-overview {
+    background-color: blue;
+  }
   section {
     padding: 40px;
   }
@@ -778,12 +802,18 @@ table {
     max-width: 90%;
     flex-shrink: 1;
   }
+  .project-overview .thumbnail.mobile-img {
+    margin-right: 0px; 
+  }
   .project-details .carousel {
     margin: 60px 25px;
   }
 }
 
 @media (max-width: 868px) {
+  .project-overview {
+    background-color: green;
+  }
   .main {
     padding: 75px;
   }
@@ -796,6 +826,9 @@ table {
 }
 
 @media (max-width: 790px) {
+  .project-overview {
+    background-color: purple;
+  }
   section {
     padding: 50px;
   }
@@ -847,6 +880,9 @@ table {
 }
 
 @media (max-width: 768px) {
+  .project-overview {
+    background-color: pink;
+  }
   section {
     flex-direction: column;
     align-items: center;
@@ -933,11 +969,6 @@ table {
     width: 100%;
     font-size: 18px;
     margin: 0px;
-  }
-  .about img {
-    width: 225px;
-    height: 275px;
-    border-radius: 100px;
   }
   .section-title {
     font-size: 48px;
