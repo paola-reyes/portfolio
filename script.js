@@ -36,6 +36,10 @@ const zoomImage = document.querySelectorAll(".zoomable");
 const modal = document.querySelector(".modal");
 const modalImage = document.querySelector(".modal img");
 const closeModal = document.querySelector(".modal .close-symbol");
+const modalImageFrame = document.createElement("div");
+modalImageFrame.classList.add("modal-image-frame");
+modal.appendChild(modalImageFrame);
+modalImageFrame.append(modalImage, closeModal);
 
 // Function to show close-up image
 function showCloseup(e) {
@@ -73,13 +77,9 @@ for (let i = 0; i < zoomImage.length; i++) {
 
 closeModal.addEventListener('click', hideCloseup);
 
-// Hide popup when clicking outside of it
-opaqueBackground.addEventListener('click', () => {
-    if (!sidebar.classList.contains("hidden")) {
-        hideSidebar();
-    }
-
-    if (!modal.classList.contains("hidden")) {
+// Hide the image when clicking outside its frame
+modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
         hideCloseup();
     }
 });

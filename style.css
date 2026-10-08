@@ -542,39 +542,42 @@ footer {
   }
 
 .modal {
-  width: fit-content;
-  height: auto;
-  max-width: 80vw;
-  max-height: 80vh;
   position: fixed;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  inset: 0;
+  width: auto;
+  height: auto;
   z-index: 20;
 }
-  .modal img {
+.modal-image-frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: fit-content;
+    height: fit-content;
+    transform: translate(-50%, -50%);
+  }
+  .modal-image-frame img {
     display: block;
     width: auto;
     height: auto;
-    max-height: 80vh;
-    max-width: 80vw;
+    max-height: 70vh;
+    max-width: 65vw;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
     border-radius: 5px;
     object-fit: contain;
   }
-  .modal .close-symbol {
+  .modal-image-frame .close-symbol {
+    position: absolute;
+    top: -32px;
+    right: -32px;
     color: white;
     cursor: pointer;
-    margin: 25px 0px;
+    margin: 0;
     z-index: 25;
   }
-  .modal .close-symbol:hover {
+  .modal-image-frame .close-symbol:hover {
     color: rgb(193, 193, 193);
   }
-
-.modal.modal-mobile {
-  width: fit-content;
-}
 
 .subheading {
   color: gray;
@@ -732,12 +735,6 @@ table {
   }
 
 /* Responsive changes */
-@media (min-width: 1500px) {
-  .modal {
-    width: 60%;
-  }
-}
-
 @media (max-width: 1500px) {
   .about p {
     max-width: 600px;
@@ -745,9 +742,6 @@ table {
 }
 
 @media (max-width: 1100px) {
-  .project-overview {
-    background-color: yellow;
-  }
   .about {
     display: flex;
     justify-content: center;
@@ -762,9 +756,6 @@ table {
 }
 
 @media (max-width: 1024px) {
-  .project-overview {
-    background-color: blue;
-  }
   section {
     padding: 40px;
   }
@@ -811,9 +802,6 @@ table {
 }
 
 @media (max-width: 868px) {
-  .project-overview {
-    background-color: green;
-  }
   .main {
     padding: 75px;
   }
@@ -826,9 +814,6 @@ table {
 }
 
 @media (max-width: 790px) {
-  .project-overview {
-    background-color: purple;
-  }
   section {
     padding: 50px;
   }
@@ -880,9 +865,6 @@ table {
 }
 
 @media (max-width: 768px) {
-  .project-overview {
-    background-color: pink;
-  }
   section {
     flex-direction: column;
     align-items: center;
@@ -923,12 +905,12 @@ table {
   .project-summary {
     margin: 20px 5px;
   }
+  .modal-image-frame img {
+    max-width: 80vw;
+    max-height: 70vh;
+  }
   .project-overview {
     padding: 40px;
-  }
-  .modal {
-    width: 90vw;
-    max-width: 95vw;
   }
   .project-details {
     padding: 40px;
