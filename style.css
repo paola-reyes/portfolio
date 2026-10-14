@@ -1,13 +1,44 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300");
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rock+3D&display=swap');
+@font-face {
+  font-family: "Open Sans";
+  src: url("assets/fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300 800;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: url("assets/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: url("assets/fonts/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 400 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("assets/fonts/Nunito_Sans/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 200 1000;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Yuyu";
+  src: url("assets/fonts/Yuyu/YuYu-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
 
 :root {
   --header-bg: #262626;
-  --dark-bg: url(assets/dark-bg.png);
-  --light-bg: url(assets/light-bg.jpg);
+  --light-bg: url(assets/media/light-bg.jpg);
+  --dark-bg: url(assets/media/dark-bg.png);
+  --section-bg: #2f4475;
 }
 
 body {
@@ -21,25 +52,32 @@ section {
 
 header {  
   background-color: var(--header-bg);
-  padding: 25px 75px;
+  padding: 20px 75px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-  
+
 .title {
-  font: 42px "Oswald", sans-serif;
+  font: 55px "Yuyu", sans-serif;
   text-decoration: none;
-  letter-spacing: 2px;
+  letter-spacing: 1.25px;
   color: white;
+  transform: translateY(-8px);
+  text-transform: lowercase;
 }
   .title a, .title:link, .title:hover, .title:visited,
   .nav-link a, .nav-link:link, .nav-link:hover, .nav-link:visited {
     color: white;
   }
 
+.header-menu{
+  align-items: flex-end;
+}
+
 .nav-link {
-  font: 16px "Roboto", sans-serif;
+  font: 16px "Open Sans", sans-serif;
+  text-transform: uppercase;
   letter-spacing: 1px;
   color: white;
 }
@@ -85,7 +123,7 @@ header {
 
 .sidebar-menu {
   background-color: white;
-  width: 45vw;
+  width: 55vw;
   height: 100vh;
   padding: 30px 40px;
   top: 0px;
@@ -186,19 +224,25 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   color: white; 
-  padding: 90px 75px;
+  padding: 125px 75px;
   display: flex;
   justify-content: space-evenly;
   gap: 50px;
   align-items: center;
 }
+  .about-text {
+    flex: 1 1 0;
+    min-width: 0;
+  }
   .about p {
-    width: 900px;
+    width: 100%;
+    max-width: 875px;
     font-size: 20px;
+    font-weight: 300;
     line-height: 1.5;
   }
   .about img {
-    width: 300px;
+    width: 325px;
     height: auto;
     aspect-ratio: 1 / 1;
     object-fit: cover;
@@ -209,7 +253,7 @@ header {
 
 .quote {
   color: lightblue;
-  font: 38px "Open Sans", sans-serif;
+  font: 38px "Playfair Display", serif;
   font-weight: 600;
   margin-bottom: 30px;
 }
@@ -219,6 +263,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: center;
+  padding: 100px 0px;
 }
   .skills .card {
     width: 300px;
@@ -227,18 +272,25 @@ header {
     display: flex;          
     flex-direction: column; 
   }
+  .skills .card-content h3 {
+    font-weight: 300;
+  }
   .skills h4 {
     text-align: left;
     font-style: italic;
   }
 
 .section-title {
-  color: white;
-  font: 75px "Oswald", sans-serif;
-  font-weight: 500;
-  text-transform: uppercase;
+  font-family: "Nunito Sans", sans-serif;
+  color: #091d3a;
+  letter-spacing: 0.02em;
   margin-bottom: 45px;
   text-align: center;
+}
+
+.skills .section-title {
+  font-size: 50px;
+  font-weight: 800;
 }
 
 .card-grid {
@@ -254,6 +306,12 @@ header {
   margin: 50px;
   overflow: hidden;
 }
+  .card h2 {
+    font-weight: 500;
+  }
+  .card h3 {
+    font-weight: 400;
+  }
   .card h4 {
     font-weight: 300; 
     line-height: 1.5;
@@ -282,9 +340,7 @@ header {
 }
 
 .view-btn {
-  font-size: 20px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 600;
+  font: 500 20px "Nunito Sans", sans-serif;
   border-radius: 30px;
   border-style: none;
   padding: 20px 28px;
@@ -303,9 +359,9 @@ header {
 }
 
 .btn-light {
-  background-color: rgba(255, 255, 255, 0.9);
-	color: rgba(14, 65, 216, 0.7);
-  border: 2px solid rgba(14, 65, 216, 0.7);
+  background-color: rgb(255, 255, 255);
+	color: rgba(58, 97, 217, 0.7);
+  border: 2px solid rgba(58, 97, 217, 0.7);
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); 
 }
   .btn-light:hover {
@@ -313,12 +369,12 @@ header {
   }
 
 .btn-dark {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgb(69, 78, 89);
 	color: white;
   border: 2px solid rgba(255, 255, 255, 0.5);
 }
   .btn-dark:hover {
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgb(76, 85, 96);
   }
 
 .gradient-divider {
@@ -379,15 +435,31 @@ footer {
   }
   footer p {
     font-size: 18px;
+    font-weight: 300;
   }
 
 .portfolio {
-  background-image: var(--light-bg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  position: relative;
+  isolation: isolate;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 125px 0px;
+}
+  /* Flip background image vertically */
+  .portfolio::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-image: var(--light-bg);
+    background-size: cover;
+    transform: scaleY(-1);
+  }
+
+.portfolio .section-title {
+  font-size: 65px;
+  font-weight: 900;
 }
 
 .portfolio .card {
@@ -404,7 +476,6 @@ footer {
 
 .portfolio .card-header h2 {
   margin: 0px;
-  padding-left: 70px;
   padding-top: 8px;
   word-wrap: break-word;
   overflow-wrap: break-word;
@@ -512,6 +583,7 @@ footer {
 .project-overview {
   display: flex;
   align-items: center;
+  padding-top: 75px;
 }
   .project-overview .main-text {
     max-width: 800px;
@@ -737,7 +809,7 @@ table {
 /* Responsive changes */
 @media (max-width: 1500px) {
   .about p {
-    max-width: 600px;
+    max-width: 1000px;
   }
 }
 
@@ -745,10 +817,6 @@ table {
   .about {
     display: flex;
     justify-content: center;
-    padding: 45px 30px 60px;
-  }
-  .about p {
-    width: 90%;
   }
   .about img {
     margin: 10px;
@@ -825,9 +893,8 @@ table {
     display: flex;
   }
   .quote {
-    font-size: 30px;
+    font-size: 32px;
     margin-bottom: 40px;
-    max-width: 80%;
   }
   .skills .carousel {
     display: block !important;
@@ -945,12 +1012,15 @@ table {
     margin: 50px 0px 10px;
   }
   .quote {
-    font-size: 32px;
+    font-size: 28px;
   }
   .about p {
     width: 100%;
     font-size: 18px;
     margin: 0px;
+  }
+  .about img {
+    width: 250px;
   }
   .section-title {
     font-size: 48px;
