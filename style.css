@@ -52,7 +52,7 @@ section {
 
 header {  
   background-color: var(--header-bg);
-  padding: 20px 75px;
+  padding: 15px 75px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -61,7 +61,6 @@ header {
 .title {
   font: 55px "Yuyu", sans-serif;
   text-decoration: none;
-  letter-spacing: 1.25px;
   color: white;
   transform: translateY(-8px);
   text-transform: lowercase;
@@ -258,6 +257,19 @@ header {
   margin-bottom: 30px;
 }
 
+.section-title {
+  font-family: "Nunito Sans", sans-serif;
+  color: #091d3a;
+  letter-spacing: 0.02em;
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+.skills .section-title {
+  font-size: 45px;
+  font-weight: 750;
+}
+
 .skills {
   background-image: var(--light-bg);
   background-repeat: no-repeat;
@@ -279,19 +291,6 @@ header {
     text-align: left;
     font-style: italic;
   }
-
-.section-title {
-  font-family: "Nunito Sans", sans-serif;
-  color: #091d3a;
-  letter-spacing: 0.02em;
-  margin-bottom: 45px;
-  text-align: center;
-}
-
-.skills .section-title {
-  font-size: 50px;
-  font-weight: 800;
-}
 
 .card-grid {
   max-width: 1200px;
@@ -459,7 +458,7 @@ footer {
 
 .portfolio .section-title {
   font-size: 65px;
-  font-weight: 900;
+  font-weight: 800;
 }
 
 .portfolio .card {
